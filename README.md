@@ -1,5 +1,5 @@
 # GardenLink.Api
-API REST para controlador de riego. Explicacion general en https://gardenlink.github.io
+API REST para controlador de riego. Explicación general en https://gardenlink.github.io
 
 ### Instalar:
 
@@ -28,7 +28,7 @@ app_port: puerto por defecto 9000
 Configrar para apuntar al broker mqtt (Gardenlink.MQTTServer)
 ```
 "mqtt" : {
-    	"mqtt_server" : "localhost",  //ubicacion del servidor mqtt 
+    	"mqtt_server" : "localhost",  //ubicacion del servidor mqtt
     	"mqtt_port": "1883",          //puerto por defecto
     	"http_server" : "localhost",  //ubicacion del servidor http del broker
     	"http_port" : "3000"          //puerto por defecto
@@ -44,7 +44,7 @@ Ejemplo:
 ```
 "datasource" : {
   "NEDB"  : { "Habilitado" : "true",        //solo un tipo de base puede estar habiltada
-              "Sincronizacion" : "true",    //no usado por el momento 
+              "Sincronizacion" : "true",    //no usado por el momento
               "Debug" : "true",             //loguea en modo debug
             }
 
@@ -72,11 +72,11 @@ Si tengo instalado este servidor en diferentes host, ejemplo: raspberry y heroku
       "TargetPort" : "80",
       "BaseURL" : "/api/v1/"
  }
- 
+
  ```
- 
+
 #### Mailer
- 
+
  Configuracion para envio de correos de alerta
  ```
   "mail_enabled" : "false",
@@ -86,9 +86,9 @@ Si tengo instalado este servidor en diferentes host, ejemplo: raspberry y heroku
   "mailer_destinatario" : "destinatario@domain.com",
   "mailer_remitente" : "gardenlink@domain.com",
   ```
-  
+
 #### Twitter
-  
+
   Para enviar tweets y autenticar (todavia no lo uso)
   ```
   "twitter_enabled" : "false",
@@ -99,7 +99,7 @@ Si tengo instalado este servidor en diferentes host, ejemplo: raspberry y heroku
   "twitter_callback_url" : "http://localhost:9000/auth/twitter/callback",
   "twitter_autenticacion" : "false",
   ```
- 
+
 #### Monitoreo
  ```
   "monitor_habilitado" : "false",  
@@ -123,4 +123,3 @@ Se aseguran las apis mediante JWT, de estar habilitado, primero se debe obtener 
 ### Api docs
 
 https://cdn.rawgit.com/gardenlink/GardenLink.Api/master/docs/index.html
-
